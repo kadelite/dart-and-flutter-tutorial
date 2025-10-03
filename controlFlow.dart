@@ -12,10 +12,16 @@ void main() {
   //}
 
   // do-while loop
-  int count = 0;
-  do{
-    print('Count is $count');
-    count++;
-  } while (count < 5);
+  // int count = 0;
+  // do{
+  //   print('Count is $count');
+  //   count++;
+  // } while (count < 5);
+
+  // for...in loop
+
+  List<String> fruits = ['Apple', 'Banana', 'Cherry'];
+  for (var fruit in fruits) {
+    print('Fruit: $fruit\n');
   }
-  
+}

@@ -5,9 +5,17 @@ void main() {
   // }
 
   //while loop
+  // int count = 0;
+  // while (count < 5) {
+  //   print('Count is $count');
+  //   count++;
+  //}
+
+  // do-while loop
   int count = 0;
-  while (count < 5) {
+  do{
     print('Count is $count');
     count++;
+  } while (count < 5);
   }
-}
+  

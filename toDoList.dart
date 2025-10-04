@@ -92,11 +92,10 @@ void main() {
         break;
       case 5:
         isRunning = false;
-        print("Exiting To-Do List. Goodbye!");
+        print("Exiting To-Do List... Goodbye!");
         break;
       default:
         print("Invalid choice. Please try again.");
     }
   }
-  
 }

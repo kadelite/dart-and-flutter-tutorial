@@ -3,7 +3,7 @@ import 'dart:math';
 
 void main() {
   var random = Random(); // Create a Random object
-  int target = random.nextInt(100); // Generate a random number between 0 and 99
+  int target = random.nextInt(100) + 1; // Random number between 1 and 100
 
   int attempts = 0; // Initialize attempts counter
   int guess; // Variable to store user's guess

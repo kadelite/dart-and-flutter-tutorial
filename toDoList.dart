@@ -5,6 +5,7 @@
 import 'dart:io';
 
 void showMenu() {
+  // showMenu function to display options
   print('To-Do List Menu:');
   print('1. Add Task');
   print('2. Remove Task');
@@ -14,6 +15,7 @@ void showMenu() {
 }
 
 void addTask(List<String> tasks) {
+  // addTask function to add a new task
   stdout.write("Enter task description: ");
   String task = stdin.readLineSync()!;
   tasks.add(task);
@@ -21,6 +23,7 @@ void addTask(List<String> tasks) {
 }
 
 void viewTasks(List<String> tasks) {
+  // viewTasks function to display all tasks
   if (tasks.isEmpty) {
     print("No tasks available.");
   } else {
@@ -32,6 +35,7 @@ void viewTasks(List<String> tasks) {
 }
 
 void removeTask(List<String> tasks) {
+  // removeTask function to remove a task
   if (tasks.isEmpty) {
     print("No tasks available.");
     return;
@@ -50,6 +54,7 @@ void removeTask(List<String> tasks) {
 }
 
 void markTaskCompleted(List<String> tasks, Set<int> completedTasks) {
+  // markTaskCompleted function to mark a task as completed
   if (tasks.isEmpty) {
     print("No tasks available.");
     return;

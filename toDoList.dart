@@ -66,3 +66,37 @@ void markTaskCompleted(List<String> tasks, Set<int> completedTasks) {
     print("Task marked as completed: ${tasks[taskNumber - 1]}");
   }
 }
+
+void main() {
+  List<String> tasks = [];
+
+  bool isRunning = true;
+
+  while (isRunning) {
+    showMenu();
+    stdout.write("Choose an option: ");
+    int choice = int.parse(stdin.readLineSync()!);
+
+    switch (choice) {
+      case 1:
+        addTask(tasks);
+        break;
+      case 2:
+        removeTask(tasks);
+        break;
+      case 3:
+        markTaskCompleted(tasks, {});
+        break;
+      case 4:
+        viewTasks(tasks);
+        break;
+      case 5:
+        isRunning = false;
+        print("Exiting To-Do List. Goodbye!");
+        break;
+      default:
+        print("Invalid choice. Please try again.");
+    }
+  }
+  
+}

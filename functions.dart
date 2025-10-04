@@ -1,5 +1,6 @@
 void main() {
-  greet("Alice Adeleke", 30);
+  // greet("Alice Adeleke", 30);
+  greet(userName: "Alice Adeleke", age: 30);
 }
 
 // void greet() {
@@ -7,6 +8,11 @@ void main() {
 // }
 
 // positional parameters
-void greet(String userName, int age) {
-  print('Hello, my name is $userName and I am $age years old.');
+// void greet(String userName, int age) {
+//   print('Hello, my name is $userName and I am $age years old.');
+// }
+
+// named parameters
+void greet({required String userName, int? age}) {
+  print('Hello, my name is $userName, I am $age years old.');
 }

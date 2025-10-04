@@ -16,20 +16,21 @@ void showMenu() {
 
 void addTask(List<String> tasks) {
   // addTask function to add a new task
-  stdout.write("Enter task description: ");
-  String task = stdin.readLineSync()!;
-  tasks.add(task);
-  print("Task added: $task");
+  stdout.write("Enter task description: "); // Prompt user for task description
+  String task = stdin.readLineSync()!; // Read user input
+  tasks.add(task); // Add task to the list
+  print("Task added: $task"); // Confirm task addition
 }
 
 void viewTasks(List<String> tasks) {
   // viewTasks function to display all tasks
   if (tasks.isEmpty) {
     print("No tasks available.");
+    return;
   } else {
     print("Your Tasks:");
     for (int i = 0; i < tasks.length; i++) {
-      print("${i + 1}. ${tasks[i]}");
+      print("${i + 1}. ${tasks[i]}"); // Display each task with its number
     }
   }
 }
@@ -41,9 +42,10 @@ void removeTask(List<String> tasks) {
     return;
   }
 
-  viewTasks(tasks);
+  viewTasks(tasks); // Display current tasks
   stdout.write("Enter the task number to remove: ");
-  int taskNumber = int.parse(stdin.readLineSync()!);
+  int taskNumber =
+      int.parse(stdin.readLineSync()!); // Read task number to remove
 
   if (taskNumber < 1 || taskNumber > tasks.length) {
     print("Invalid task number.");
@@ -73,12 +75,12 @@ void markTaskCompleted(List<String> tasks, Set<int> completedTasks) {
 }
 
 void main() {
-  List<String> tasks = [];
+  List<String> tasks = []; // List to store tasks
 
   bool isRunning = true;
 
   while (isRunning) {
-    showMenu();
+    showMenu(); // Display the menu
     stdout.write("Choose an option: ");
     int choice = int.parse(stdin.readLineSync()!);
 

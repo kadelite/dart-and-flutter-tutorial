@@ -77,12 +77,12 @@ void greet(String name, int age){
 //   myName(age: 32, name: "Adekunle Adeleke");
 // }
 
-void fetchData(Function callback) {
-  // Simulate fetching data
-  callback("Data loaded from the server");
-}
-void main() {
-  fetchData((data) {
-    print(data);
-  });
-}
+// void fetchData(Function callback) {
+//   // Simulate fetching data
+//   callback("Data loaded from the server");
+// }
+// void main() {
+//   fetchData((data) {
+//     print(data);
+//   });
+// }

@@ -79,5 +79,10 @@ void greet(String name, int age){
 
 void fetchData(Function callback) {
   // Simulate fetching data
-  callback("Data loaded");
+  callback("Data loaded from the server");
+}
+void main() {
+  fetchData((data) {
+    print(data);
+  });
 }

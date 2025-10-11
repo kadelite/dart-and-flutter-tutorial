@@ -1,7 +1,7 @@
 // Inherintance in Dart?
 void main() {
-  Car myCar = Car("Red", "Toyota");
-  print("My car is a ${myCar.color} ${myCar.model}");
+  Car myCar = Car("Red", "Tesla"); // object
+  print("My car is a ${myCar.color} ${myCar.model}"); // Accessing properties
 }
 
 class Vehicle {

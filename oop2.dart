@@ -27,6 +27,20 @@
 // Default Constructor: A constructor that takes no parameters and initializes properties with default values.
 // Parameterized Constructor: A constructor that takes parameters to initialize properties with specific values.
 
+class Singleton {
+  static final Singleton _instance = Singleton._internal();
+
+  factory Singleton() {
+    return _instance;
+  }
+
+  Singleton._internal(); // Private constructor
+
+  void showMessage() {
+    print("This is a singleton class");
+  }
+}
+
 class Rectangle {
   double width;
   double height;
@@ -57,4 +71,10 @@ void main() {
   print(
     "Square - Width: ${square.width}, Height: ${square.height}",
   ); // Accessing properties
+
+  Singleton singleton1 = Singleton(); // Object
+  Singleton singleton2 = Singleton(); // Object
+
+  singleton1.showMessage(); // Method call
+  print(identical(singleton1, singleton2)); // true
 }

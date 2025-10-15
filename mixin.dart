@@ -1,4 +1,5 @@
-// Mixin in dart
+// Mixin in dart: allow to use method from one class in another class without inheritance.. sharing behaviours between classes
+// Use the 'with' keyword to apply mixins to a class
 
 void main() {
   Fish myFish = Fish();

@@ -15,6 +15,6 @@ class Circle {
 }
 
 void main() {
-  Circle circle = Circle(5); // Object
+  Circle circle = Circle(5); // Object creation
   circle.displayArea(); // Accessing method
 }

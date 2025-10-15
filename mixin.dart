@@ -1,4 +1,4 @@
-// Mixin
+// Mixin in dart
 
 void main() {
   Fish myFish = Fish();

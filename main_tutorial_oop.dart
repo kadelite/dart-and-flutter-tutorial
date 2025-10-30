@@ -11,7 +11,7 @@ Features Of OOP
 */
 
 class Person {
-  // Attributes
+  // Attributes, properties
   String? name;
   int? age;
   String? phone;
@@ -21,7 +21,7 @@ class Person {
   // Constructor
   //Person(this.name, this.age, this.height);
 
-  // Method
+  // Method: Behavior, function, action, operation, etc.
   void displayInfo() {
     print("Person name: $name.");
     print("Phone number: $phone.");
@@ -38,5 +38,17 @@ class Area {
 
   double calculateArea() {
     return length! * breadth!;
+  }
+}
+
+class Book {
+  String? name;
+  String? author;
+  double? price;
+
+  void display() {
+    print("Book name: $name.");
+    print("Author: $author.");
+    print("Price: $price.");
   }
 }

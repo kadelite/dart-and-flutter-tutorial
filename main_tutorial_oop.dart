@@ -52,3 +52,22 @@ class Book {
     print("Price: $price.");
   }
 }
+
+class Car {
+  String? name;
+  String? color;
+  int? numberOfSeats;
+
+  void start() {
+    print("$name Car Started.");
+  }
+}
+
+void main() {
+  
+  Car car = Car();
+  car.name = "Toyota";
+  car.color = "Red";
+  car.numberOfSeats = 5;
+  car.start();
+}

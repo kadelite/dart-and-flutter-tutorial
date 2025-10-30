@@ -2,7 +2,7 @@
 
 Features Of OOP
 1. Class: A blue print for creating objects. It defines the properties and methods that an object of that class will have.
-2. Object
+2. Object: An instance of a class. It is created using the class constructor, and it has its own unique state and behavior.
 3. Encapsulation
 4. Inheritance
 5. Polymorphism

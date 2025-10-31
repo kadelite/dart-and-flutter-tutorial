@@ -94,7 +94,7 @@ class Teacher {
   }
 }
 
-void main() {
+void main3() {
   // Creating object of Teacher class
   Teacher teacher1 = Teacher("Alice", 30, "Math", 50000);
   teacher1.displayInfo();
@@ -106,4 +106,28 @@ void main() {
     60000,
   ); // Creating another object
   teacher2.displayInfo(); // Calling method
+}
+
+
+class Point {
+  final int x;
+  final int y;
+
+  const Point(this.x, this.y);
+}
+
+void main() {
+  // p1 and p2 has the same hash code.
+  Point p1 = const Point(1, 2);
+  print("The p1 hash code is: ${p1.hashCode}");
+
+  Point p2 = const Point(1, 2);
+  print("The p2 hash code is: ${p2.hashCode}");
+  // without using const
+  // this has different hash code.
+  Point p3 = Point(2, 2);
+  print("The p3 hash code is: ${p3.hashCode}");
+
+  Point p4 = Point(2, 2);
+  print("The p4 hash code is: ${p4.hashCode}");
 }

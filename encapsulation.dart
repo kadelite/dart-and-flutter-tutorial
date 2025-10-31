@@ -1,12 +1,12 @@
 class Employee {
   // Private properties
-  int _id;
+  int _id; // Using underscore to make it private
   String _name;
   int _age;
   double _salary;
 
   // Constructor
-  Employee(this._id, this._name, this._age, this._salary);
+  Employee(this._id, this._name, this._age, this._salary); // Parameterized constructor
   
   // Getter for ID
   int get id => _id; 

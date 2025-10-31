@@ -7,6 +7,7 @@ Features Of OOP
 4. Inheritance
 5. Polymorphism
 6. Abstraction
+7. Constructors: Special methods that are called when an object is created. They are used to initialize the object's properties.
 
 */
 
@@ -63,11 +64,46 @@ class Car {
   }
 }
 
-void main() {
-  
+void main2() {
   Car car = Car();
   car.name = "Toyota";
   car.color = "Red";
   car.numberOfSeats = 5;
   car.start();
+}
+
+// class object and constructor example
+
+class Teacher {
+  // Class
+  // Attributes, properties
+  String? name;
+  int? age;
+  String? subject;
+  double? salary;
+
+  // Constructor
+  Teacher(this.name, this.age, this.subject, this.salary);
+
+  void displayInfo() {
+    // Method
+    print("Teacher name: ${this.name}.");
+    print("Age: $age.");
+    print("Subject: $subject.");
+    print("Salary: $salary.");
+  }
+}
+
+void main() {
+  // Creating object of Teacher class
+  Teacher teacher1 = Teacher("Alice", 30, "Math", 50000);
+  teacher1.displayInfo();
+
+  Teacher teacher2 = Teacher(
+    "Bob",
+    40,
+    "Science",
+    60000,
+  ); // Creating another object
+  teacher2.displayInfo(); // Calling method
 }

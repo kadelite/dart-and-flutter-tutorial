@@ -118,7 +118,7 @@ class Point {
   const Point(this.x, this.y);
 }
 
-void main() {
+void main0() {
   // p1 and p2 has the same hash code.
   Point p1 = const Point(1, 2);
   print("The p1 hash code is: ${p1.hashCode}");
@@ -133,3 +133,5 @@ void main() {
   Point p4 = Point(2, 2);
   print("The p4 hash code is: ${p4.hashCode}");
 }
+
+//Encapsulation example

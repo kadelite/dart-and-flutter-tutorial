@@ -1,4 +1,4 @@
-// Getter is used to get the value of a property. It is mostly used to access a private property’s value. Getter provide explicit read access to an object properties.
+//Setter is used to set the value of a property. It is mostly used to update a private property’s value. Setter provide explicit write access to an object properties.
 
 /*When To Use Getter And Setter
 Use getter and setter when you want to restrict the access to the properties.
@@ -14,22 +14,26 @@ class NoteBook {
   // Constructor
   NoteBook(this._name, this._price, this._available);
 
-  // Getter for name
   String get name => _name;
-
-  // Getter for price
   double get price => _price;
-
-  // Getter for availability
   bool get available => _available;
-}
+  
+  // Setter for name
+  set name(String name) {
+    _name = name;
+  }
 
-void main() {
-  // Creating an instance of NoteBook
-  NoteBook nb = NoteBook("Dell Inspiron", 750.0, true);
+  // Setter for price
+  set price(double price) {
+    if (price >= 0) {
+      _price = price;
+    } else {
+      throw ArgumentError("Price cannot be negative");
+    }
+  }
 
-  // Accessing properties using getters
-  print("Name: ${nb.name}");
-  print("Price: \$${nb.price}");
-  print("Available: ${nb.available}");
+  // Setter for availability
+  set available(bool available) {
+    _available = available;
+  }
 }

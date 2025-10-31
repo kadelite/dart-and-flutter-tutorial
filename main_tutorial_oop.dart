@@ -3,7 +3,9 @@
 Features Of OOP
 1. Class: A blue print for creating objects. It defines the properties and methods that an object of that class will have.
 2. Object: An instance of a class. It is created using the class constructor, and it has its own unique state and behavior.
-3. Encapsulation
+3. Encapsulation: The process of hiding the internal details of an object and exposing only the necessary information. This helps to protect the object's state and behavior from being modified by external code. In Dart, Encapsulation means hiding data within a library, preventing it from outside factors. It helps you control your program and prevent it from becoming too complicated.
+What Is Library In Dart?
+By default, every .dart file is a library. A library is a collection of functions and classes. A library can be imported into another library using the import keyword.
 4. Inheritance
 5. Polymorphism
 6. Abstraction

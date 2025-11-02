@@ -26,3 +26,37 @@ void main1() {
 Future<String> getUserName() async {
   return Future.delayed(Duration(seconds: 5), () => 'Mark');
 }
+
+void main2() {
+  print("Start");
+  getData();
+  print("End");
+}
+
+void getData1() async {
+  String data = await middleFunction1();
+  print(data);
+}
+
+Future<String> middleFunction1() {
+  return Future.delayed(Duration(seconds: 5), () => "Hello");
+}
+
+main() {
+  print("Start");
+  getData();
+  print("End");
+}
+
+void getData() async {
+  try {
+    String data = await middleFunction();
+    print(data);
+  } catch (err) {
+    print("Some error $err");
+  }
+}
+
+Future<String> middleFunction() {
+  return Future.delayed(Duration(seconds: 5), () => "Hello");
+}
